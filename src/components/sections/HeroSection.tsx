@@ -16,12 +16,9 @@ export default function HeroSection() {
 
       <div className="container mx-auto px-6 relative z-10 grid lg:grid-cols-2 gap-12 items-center">
         <div className="max-w-3xl flex flex-col items-start text-left">
-          <span className="inline-block px-5 py-2 rounded-full bg-xhs-red/10 border border-xhs-red/20 text-xhs-red font-bold text-sm tracking-widest mb-8 uppercase">
-            {heroData.company}
-          </span>
           <h1 className="text-6xl md:text-8xl font-black text-gray-900 leading-[1.1] mb-8 tracking-tighter">
             중국마케팅<br />
-            <span className="text-xhs-red inline-block mt-2 drop-shadow-sm">샤오홍슈</span> 제안서
+            <span className="text-xhs-red inline-block mt-2 drop-shadow-sm">샤오홍슈</span> 마케팅
           </h1>
           <p className="text-xl md:text-3xl text-gray-600 mb-12 font-medium leading-relaxed max-w-2xl tracking-tight">
             {heroData.subtitle}
