@@ -10,8 +10,8 @@ export default function ContentExamples() {
       <div className="container mx-auto px-6 max-w-6xl relative z-10">
         <div className="text-center mb-20">
           <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">04 콘텐츠 예시</h2>
-          <h3 className="text-2xl sm:text-4xl md:text-5xl font-black leading-tight mb-6">
-            실제 샤오홍슈 <span className="text-xhs-red">[맛집]</span> 체험단<br />
+          <h3 className="text-2xl sm:text-4xl md:text-5xl font-black leading-tight mb-6 break-keep px-2">
+            실제 샤오홍슈 <span className="text-xhs-red">[맛집]</span> 체험단<br className="hidden md:block" />
             고퀄리티 콘텐츠
           </h3>
           <p className="text-base sm:text-xl text-gray-400 font-medium">실제 유저 반응을 이끌어내는 트렌디한 감성의 콘텐츠입니다.</p>

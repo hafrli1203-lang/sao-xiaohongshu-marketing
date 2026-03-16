@@ -7,8 +7,8 @@ export default function SearchData() {
   return (
     <section id="search-data" className="py-16 sm:py-32 bg-gray-50 border-t border-gray-100">
       <div className="container mx-auto px-6 max-w-5xl">
-        <div className="text-center mb-16">
-          <h2 className="text-xl sm:text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
+        <div className="text-center mb-12 md:mb-16">
+          <h2 className="text-2xl sm:text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight break-keep px-2">
             {searchDataSection.headline} <br className="hidden md:block"/>
             <span className="text-xhs-red">{searchDataSection.subheadline}</span>
           </h2>

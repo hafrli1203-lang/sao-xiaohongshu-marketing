@@ -17,13 +17,13 @@ export default function ConsumerTrends() {
       <div className="absolute top-0 right-0 w-1/2 h-full bg-gray-50/50 skew-x-[-20deg] origin-top-right -z-10"></div>
       
       <div className="container mx-auto px-6 z-10">
-        <div className="mb-20">
+        <div className="mb-12 md:mb-20 text-center md:text-left">
           <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3 text-center md:text-left">02 시장 동향</h2>
-          <div className="flex flex-col md:flex-row justify-between items-end gap-6">
-            <h3 className="text-2xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+          <div className="flex flex-col md:flex-row justify-between items-center md:items-end gap-4 md:gap-6">
+            <h3 className="text-2xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight break-keep px-2">
               중국 소비자 <br className="hidden md:block"/>트렌드 분석
             </h3>
-            <p className="text-gray-500 max-w-md text-lg text-center md:text-right">
+            <p className="text-gray-500 max-w-md text-base sm:text-lg text-center md:text-right break-keep px-4 md:px-0 mt-2 md:mt-0">
               빠르게 변화하는 중국 마케팅 시장, 핵심 타겟의 소비 패턴을 정확히 분석합니다.
             </p>
           </div>

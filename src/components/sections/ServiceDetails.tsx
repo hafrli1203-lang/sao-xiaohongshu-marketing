@@ -7,9 +7,9 @@ export default function ServiceDetails() {
       <div className="container mx-auto px-6 max-w-4xl">
         <div className="text-center mb-16">
           <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">03 상세 서비스</h2>
-          <h3 className="text-2xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
-            성공적인 마케팅을 위한<br />
-            <span className="text-xhs-red">샤오홍슈 체험단</span> 솔루션
+          <h3 className="text-2xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6 break-keep px-2">
+            성공적인 마케팅을 위한<br className="hidden md:block" />
+            <span className="text-xhs-red"> 샤오홍슈 체험단</span> 솔루션
           </h3>
           <p className="text-base sm:text-xl text-gray-500 font-medium">{serviceDetailsData.tagline}</p>
         </div>
