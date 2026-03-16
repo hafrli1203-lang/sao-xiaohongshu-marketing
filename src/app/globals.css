@@ -1,0 +1,31 @@
+@import "tailwindcss";
+
+:root {
+  --background: #fafafa; /* Lighter background for a cleaner look */
+  --foreground: #1a1a1a;
+  --xhs-red: #ff2442;
+  --xhs-red-dark: #e01f39;
+  --xhs-red-light: #ffebed;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-xhs-red: var(--xhs-red);
+  --color-xhs-red-dark: var(--xhs-red-dark);
+  --color-xhs-red-light: var(--xhs-red-light);
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #0a0a0a;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: var(--font-paperlogy), "Pretendard", "Apple SD Gothic Neo", sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
