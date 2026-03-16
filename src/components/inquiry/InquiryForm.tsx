@@ -79,9 +79,11 @@ export default function InquiryForm() {
   }
 
   return (
-    <form onSubmit={handleSubmit} noValidate>
-      <div>
-        <label htmlFor="businessName">업체명</label>
+    <form onSubmit={handleSubmit} noValidate className="space-y-5">
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="businessName" className="text-sm font-medium text-gray-700">
+          업체명
+        </label>
         <input
           id="businessName"
           name="businessName"
@@ -89,14 +91,19 @@ export default function InquiryForm() {
           value={formData.businessName}
           onChange={handleChange}
           required
+          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
         />
         {formState.errors.businessName && (
-          <p role="alert">{formState.errors.businessName}</p>
+          <p role="alert" className="text-sm text-red-600 mt-0.5">
+            {formState.errors.businessName}
+          </p>
         )}
       </div>
 
-      <div>
-        <label htmlFor="contactName">담당자명</label>
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="contactName" className="text-sm font-medium text-gray-700">
+          담당자명
+        </label>
         <input
           id="contactName"
           name="contactName"
@@ -104,14 +111,19 @@ export default function InquiryForm() {
           value={formData.contactName}
           onChange={handleChange}
           required
+          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
         />
         {formState.errors.contactName && (
-          <p role="alert">{formState.errors.contactName}</p>
+          <p role="alert" className="text-sm text-red-600 mt-0.5">
+            {formState.errors.contactName}
+          </p>
         )}
       </div>
 
-      <div>
-        <label htmlFor="phone">연락처</label>
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="phone" className="text-sm font-medium text-gray-700">
+          연락처
+        </label>
         <input
           id="phone"
           name="phone"
@@ -120,14 +132,19 @@ export default function InquiryForm() {
           value={formData.phone}
           onChange={handleChange}
           required
+          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
         />
         {formState.errors.phone && (
-          <p role="alert">{formState.errors.phone}</p>
+          <p role="alert" className="text-sm text-red-600 mt-0.5">
+            {formState.errors.phone}
+          </p>
         )}
       </div>
 
-      <div>
-        <label htmlFor="email">이메일</label>
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="email" className="text-sm font-medium text-gray-700">
+          이메일
+        </label>
         <input
           id="email"
           name="email"
@@ -135,20 +152,26 @@ export default function InquiryForm() {
           value={formData.email}
           onChange={handleChange}
           required
+          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
         />
         {formState.errors.email && (
-          <p role="alert">{formState.errors.email}</p>
+          <p role="alert" className="text-sm text-red-600 mt-0.5">
+            {formState.errors.email}
+          </p>
         )}
       </div>
 
-      <div>
-        <label htmlFor="category">업종</label>
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="category" className="text-sm font-medium text-gray-700">
+          업종
+        </label>
         <select
           id="category"
           name="category"
           value={formData.category}
           onChange={handleChange}
           required
+          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
         >
           {BUSINESS_CATEGORIES.map((cat) => (
             <option key={cat} value={cat}>
@@ -157,12 +180,16 @@ export default function InquiryForm() {
           ))}
         </select>
         {formState.errors.category && (
-          <p role="alert">{formState.errors.category}</p>
+          <p role="alert" className="text-sm text-red-600 mt-0.5">
+            {formState.errors.category}
+          </p>
         )}
       </div>
 
-      <div>
-        <label htmlFor="message">문의 내용</label>
+      <div className="flex flex-col gap-1.5">
+        <label htmlFor="message" className="text-sm font-medium text-gray-700">
+          문의 내용
+        </label>
         <textarea
           id="message"
           name="message"
@@ -170,18 +197,33 @@ export default function InquiryForm() {
           value={formData.message}
           onChange={handleChange}
           required
+          className="w-full px-3 py-2 border border-gray-300 rounded-md text-base resize-y focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
         />
         {formState.errors.message && (
-          <p role="alert">{formState.errors.message}</p>
+          <p role="alert" className="text-sm text-red-600 mt-0.5">
+            {formState.errors.message}
+          </p>
         )}
       </div>
 
-      <button type="submit" disabled={formState.status === "submitting"}>
+      <button
+        type="submit"
+        disabled={formState.status === "submitting"}
+        className="w-full min-h-[48px] px-6 py-3 bg-yellow-400 hover:bg-yellow-500 disabled:bg-yellow-200 disabled:cursor-not-allowed text-gray-900 font-semibold rounded-md text-base transition-colors"
+      >
         {formState.status === "submitting" ? "접수 중..." : "문의하기"}
       </button>
 
-      {formState.status === "success" && <p role="status">{formState.message}</p>}
-      {formState.status === "error" && <p role="alert">{formState.message}</p>}
+      {formState.status === "success" && (
+        <p role="status" className="text-sm text-green-700 bg-green-50 border border-green-200 rounded-md px-4 py-3">
+          {formState.message}
+        </p>
+      )}
+      {formState.status === "error" && (
+        <p role="alert" className="text-sm text-red-700 bg-red-50 border border-red-200 rounded-md px-4 py-3">
+          {formState.message}
+        </p>
+      )}
     </form>
   );
 }

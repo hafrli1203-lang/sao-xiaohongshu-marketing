@@ -5,11 +5,11 @@ export default function XiaohongshuIntro() {
   const icons = [<Users key="1" className="w-8 h-8 text-xhs-red" />, <Search key="2" className="w-8 h-8 text-xhs-red" />, <TrendingUp key="3" className="w-8 h-8 text-xhs-red" />];
 
   return (
-    <section id="intro" className="py-32 bg-gray-50 relative scroll-mt-24">
+    <section id="intro" className="py-16 sm:py-32 bg-gray-50 relative scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
           <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">01 샤오홍슈 소개</h2>
-          <p className="text-4xl md:text-5xl font-black text-gray-900 leading-tight">
+          <p className="text-2xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight">
             한국인의 검색이 <span className="text-green-500">네이버</span>라면,<br/>
             중국인의 최초검색은 <span className="text-xhs-red">샤오홍슈</span>입니다.
           </p>
@@ -25,7 +25,7 @@ export default function XiaohongshuIntro() {
               <div className="w-16 h-16 bg-red-50 rounded-2xl flex items-center justify-center mb-6 group-hover:bg-xhs-red/10 transition-colors">
                 {icons[index % icons.length]}
               </div>
-              <h3 className="text-5xl font-black text-xhs-red mb-4">{stat.value}</h3>
+              <h3 className="text-3xl sm:text-5xl font-black text-xhs-red mb-4">{stat.value}</h3>
               <p className="text-xl font-bold text-gray-900 mb-3">{stat.label}</p>
               <p className="text-gray-600 leading-relaxed max-w-sm">
                 {stat.description}
@@ -35,7 +35,7 @@ export default function XiaohongshuIntro() {
         </div>
 
         {/* Details Section */}
-        <div className="bg-white rounded-[2.5rem] p-10 md:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100">
+        <div className="bg-white rounded-[2.5rem] p-6 sm:p-10 md:p-16 shadow-[0_10px_40px_rgba(0,0,0,0.03)] border border-gray-100">
           <h3 className="text-2xl font-bold mb-10 text-center">샤오홍슈 플랫폼 특장점</h3>
           <div className="grid md:grid-cols-2 gap-x-12 gap-y-8">
             {xiaohongshuIntroData.platformDetails.map((detail) => (

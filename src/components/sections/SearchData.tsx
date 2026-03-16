@@ -5,16 +5,16 @@ export default function SearchData() {
   const maxBarValue = Math.max(...searchDataSection.barChart.map(item => item.value));
 
   return (
-    <section id="search-data" className="py-32 bg-gray-50 border-t border-gray-100">
+    <section id="search-data" className="py-16 sm:py-32 bg-gray-50 border-t border-gray-100">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
+          <h2 className="text-xl sm:text-3xl md:text-5xl font-black text-gray-900 mb-6 leading-tight">
             {searchDataSection.headline} <br className="hidden md:block"/>
             <span className="text-xhs-red">{searchDataSection.subheadline}</span>
           </h2>
         </div>
 
-        <div className="grid md:grid-cols-2 gap-12 bg-white rounded-3xl p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
+        <div className="grid md:grid-cols-2 gap-12 bg-white rounded-3xl p-4 sm:p-8 md:p-12 shadow-[0_8px_30px_rgb(0,0,0,0.04)]">
           {/* Data Chart */}
           <div>
             <div className="flex items-center gap-3 mb-8">

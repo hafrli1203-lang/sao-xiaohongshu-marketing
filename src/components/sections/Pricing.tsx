@@ -3,23 +3,23 @@ import { Check } from "lucide-react";
 
 export default function Pricing() {
   return (
-    <section id="pricing" className="py-32 bg-gray-50 relative scroll-mt-24">
+    <section id="pricing" className="py-16 md:py-32 bg-gray-50 relative scroll-mt-24">
       <div className="container mx-auto px-6 max-w-7xl relative z-10">
-        <div className="text-center mb-20">
+        <div className="text-center mb-12 md:mb-20">
           <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">05 단가표 안내</h2>
-          <h3 className="text-4xl md:text-5xl font-black text-gray-900 leading-tight mb-6">
+          <h3 className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight mb-6">
             체험단 및 인플루언서 마케팅<br />
             <span className="text-xhs-red">합리적인 가격</span> 제안
           </h3>
         </div>
 
-        <div className="space-y-32">
+        <div className="space-y-16 md:space-y-32">
           {pricingData.sections.map((section) => (
             <div key={section.title}>
-              <div className="flex items-center gap-4 mb-12">
-                <div className="h-px bg-gray-300 flex-1"></div>
-                <h3 className="text-2xl font-bold text-gray-900 px-4">{section.title}</h3>
-                <div className="h-px bg-gray-300 flex-1"></div>
+              <div className="flex items-center gap-4 mb-8 md:mb-12">
+                <div className="h-px bg-gray-300 flex-1 min-w-[16px]"></div>
+                <h3 className="text-lg md:text-2xl font-bold text-gray-900 px-4 shrink-0">{section.title}</h3>
+                <div className="h-px bg-gray-300 flex-1 min-w-[16px]"></div>
               </div>
               
               <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -30,7 +30,7 @@ export default function Pricing() {
                   return (
                     <div 
                       key={pkg.name} 
-                      className={`rounded-3xl p-8 transition-transform duration-300 hover:-translate-y-2 border ${
+                      className={`rounded-3xl p-5 md:p-8 transition-transform duration-300 hover:-translate-y-2 border ${
                         isHighlighted 
                           ? "bg-gray-900 text-white border-gray-800 shadow-2xl relative" 
                           : "bg-white text-gray-900 border-gray-100 shadow-lg hover:border-gray-200"
@@ -53,7 +53,7 @@ export default function Pricing() {
                       </div>
                       
                       <div className="mb-8">
-                        <div className={`text-3xl font-black mb-1 ${isHighlighted ? "text-white" : "text-gray-900"}`}>
+                        <div className={`text-2xl md:text-3xl font-black mb-1 ${isHighlighted ? "text-white" : "text-gray-900"}`}>
                           {pkg.pricePerUnit || pkg.price}
                         </div>
                         {pkg.pricePerUnit && pkg.price !== "별도 문의" && (
@@ -84,7 +84,7 @@ export default function Pricing() {
               </div>
               
               {section.disclaimer && (
-                <div className="mt-8 text-center text-gray-500 text-sm italic">
+                <div className="mt-6 md:mt-8 text-center text-gray-500 text-xs md:text-sm italic px-2">
                   * {section.disclaimer}
                 </div>
               )}
