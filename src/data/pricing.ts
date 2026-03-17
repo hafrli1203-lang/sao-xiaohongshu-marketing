@@ -13,7 +13,7 @@ export const pricingData: PricingData = {
           duration: "맛집·카페 업종만 적용 가능",
           price: "1,200,000원",
           pricePerUnit: "40,000원/건",
-          notes: "맛집 타종/대량 건 단위 요청시 가능. 판교의 로컬 보장 / 서울·전국 진행 가능",
+          notes: "팔로워 균일 보장 / 서울·전국 진행 가능",
         },
         {
           name: "베이직 체험단",
@@ -23,7 +23,7 @@ export const pricingData: PricingData = {
           duration: "맛집·카페·뷰티 업종 적용",
           price: "800,000원",
           pricePerUnit: "80,000원/건",
-          notes: "맛집 타종/대량 건 단위 요청시 가능. 서울 외 진행 시 별도 문의",
+          notes: "팔로워 균일 보장. 서울 외 진행 시 별도 문의",
         },
         {
           name: "스탠다드 체험단",
@@ -33,7 +33,7 @@ export const pricingData: PricingData = {
           duration: "맛집·카페·뷰티 업종 적용",
           price: "1,000,000원",
           pricePerUnit: "100,000원/건",
-          notes: "맛집 타종/대량 건 단위 요청시 가능. 서울 외 진행 시 별도 문의",
+          notes: "팔로워 균일 보장. 서울 외 진행 시 별도 문의",
         },
         {
           name: "유니크 체험단 10건",
@@ -43,7 +43,7 @@ export const pricingData: PricingData = {
           duration: "맛집·카페·뷰티 업종 적용",
           price: "1,000,000원",
           pricePerUnit: "100,000원/건",
-          notes: "맛집 타종/대량 건 단위 요청시 가능. 판교의 로컬 보장 / 서울 진행",
+          notes: "팔로워 균일 보장 / 서울 진행",
         },
         {
           name: "유니크 체험단 20건",
@@ -53,7 +53,7 @@ export const pricingData: PricingData = {
           duration: "맛집·카페·뷰티 업종 적용",
           price: "1,600,000원",
           pricePerUnit: "80,000원/건",
-          notes: "맛집 타종/대량 건 단위 요청시 가능. 판교의 로컬 보장 / 서울 진행",
+          notes: "팔로워 균일 보장 / 서울 진행",
         },
         {
           name: "스타트 패키지",
@@ -61,9 +61,9 @@ export const pricingData: PricingData = {
           influencerCount: "팔로워 혼합 구성 / 10명",
           contentType: "이미지, 리뷰",
           duration: "맛집·카페·뷰티 업종 적용",
-          price: "1,700,000원",
-          pricePerUnit: "170,000원/건",
-          notes: "팔로워 혼합 구성 (5천미만+1만이상+1만이상). 맛집 타종/대량 건 단위 요청시 가능",
+          price: "1,200,000원",
+          pricePerUnit: "120,000원/건",
+          notes: "팔로워 혼합 구성 (5천미만+1만이상+1만이상)",
         },
         {
           name: "부스팅 패키지",
@@ -73,7 +73,7 @@ export const pricingData: PricingData = {
           duration: "맛집·카페·뷰티 업종 적용",
           price: "2,200,000원",
           pricePerUnit: "110,000원/건",
-          notes: "팔로워 혼합 구성 (5천미만+1만이상+1만이상). 맛집 타종/대량 건 단위 요청시 가능",
+          notes: "팔로워 혼합 구성 (5천미만+1만이상+1만이상)",
         },
         {
           name: "임팩트 패키지",
@@ -135,7 +135,7 @@ export const pricingData: PricingData = {
           duration: "진료과목 무관 / 전국 진행 가능",
           price: "1,200,000원",
           pricePerUnit: "120,000원/건",
-          notes: "판교의 골밀 보장. 타종/대량 건방외 특성상 해당 업종 타플랫폼 병의원 특성상 진행 가능 여부 확인 필요",
+          notes: "팔로워 균일 보장. 제공내역·진료과목에 따라 진행 가능 여부 확인 필요",
         },
         {
           name: "유니크 체험단 20건",
@@ -145,7 +145,7 @@ export const pricingData: PricingData = {
           duration: "진료과목 무관 / 전국 진행 가능",
           price: "2,000,000원",
           pricePerUnit: "100,000원/건",
-          notes: "판교의 골밀 보장 / 10건 대비 건당 2만원 절감. 타종/대량 건방외 특성상 해당 업종 타플랫폼 병의원 특성상 진행 가능 여부 확인 필요",
+          notes: "팔로워 균일 보장 / 10건 대비 건당 2만원 절감. 제공내역·진료과목에 따라 진행 가능 여부 확인 필요",
         },
         {
           name: "스타트 패키지 10명",
@@ -155,7 +155,7 @@ export const pricingData: PricingData = {
           duration: "피부과 한정 / 서울 지역만 가능",
           price: "1,800,000원",
           pricePerUnit: "180,000원/건",
-          notes: "타종/대량 병의원 업종 특성상 방문 불가. 제공내역에 따라 금액/방문 특성상 진행 여부 확인 필요 (통상 3개월 이상)",
+          notes: "따종디엔핑 병의원 특성상 해당 없음. 제공내역에 따라 금액·발행 형태 달라질 수 있음. 발행까지 3개월 미만",
         },
         {
           name: "부스트 패키지",
@@ -165,7 +165,7 @@ export const pricingData: PricingData = {
           duration: "피부과 한정 / 서울 지역만 가능",
           price: "3,200,000원",
           pricePerUnit: "320,000원/건",
-          notes: "시술단가 440단위 이상 부위. 타종/대량 병의원 업종 특성상 3개월 이상 진행",
+          notes: "시장가 440만원 대비 우위. 따종디엔핑 병의원 특성상 해당 없음. 발행까지 3개월 미만",
         },
         {
           name: "병의원 기자단",
@@ -175,7 +175,7 @@ export const pricingData: PricingData = {
           duration: "진료과목 무관 / 전국 진행 가능",
           price: "1,000,000원",
           pricePerUnit: "100,000원/건",
-          notes: "서울,서울외 동일 단가. 타종/대량 병의원 업종 특성상 방문 불가. 사전 원고 (초안 파일 첨부) / 2주 이내 발행",
+          notes: "서울·서울외 동일 단가. 따종디엔핑 병의원 특성상 해당 없음. 사진·영상 필요 (자막·편집 원고 포함) / 2주 이내 발행",
         },
       ],
       disclaimer: "병의원 공통: 의료법 (의료법상에 따라 금지 형태)에 한해 진행 가능 여부가 달라질 수 있음. 체험단 실행까지 3개월 이상 / 기자단 2주 이내 발행 / 피부과 한정 상품은 서울만 가능",
@@ -191,7 +191,7 @@ export const pricingData: PricingData = {
           duration: "전 업종 (맛집·카페·뷰티·일반) 적용",
           price: "상담 후 조율",
           pricePerUnit: "최소 200만원~",
-          notes: "왕홍 호스트 다수 보유 / 서울 중심. 단가는 왕홍 규모에 따라 상담 후 결정",
+          notes: "맛집·카페·뷰티·일반 모두 적용. 이미지·영상·라이브 등 다양한 형태 가능. 왕홍 리스트 다수 보유 / 서울 중심. 단가는 왕홍 규모에 따라 상담 후 결정",
         },
       ],
       disclaimer: "왕홍 마케팅은 단가 수량 모두 상담 후 조율 / 서울 중심 진행 (지방 별도 협의)",
