@@ -7,8 +7,8 @@ import { useState } from "react";
 const navLinks = [
   { href: "#hero", label: "홈" },
   { href: "#intro", label: "소개" },
-  { href: "#service", label: "서비스" },
-  { href: "#pricing", label: "상품안내" },
+  { href: "#target", label: "대상 업종" },
+  { href: "#services", label: "서비스" },
 ];
 
 export default function Header() {

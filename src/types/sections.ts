@@ -82,6 +82,30 @@ export interface PricingData {
   additionalInfo?: string | string[];
 }
 
+export interface ServicePackage {
+  name: string;
+  subtitle: string;
+  description: string;
+  includes: string[];
+  cta: string;
+  highlighted?: boolean;
+}
+
+export interface TargetIndustry {
+  region: string;
+  industries: string[];
+}
+
+export interface RoleItem {
+  title: string;
+  description: string;
+}
+
+export interface DeliverableItem {
+  title: string;
+  description: string;
+}
+
 export interface ProcessStep {
   number: string;
   title: string;

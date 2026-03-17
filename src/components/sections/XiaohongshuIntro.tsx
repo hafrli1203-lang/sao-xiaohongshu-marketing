@@ -8,7 +8,7 @@ export default function XiaohongshuIntro() {
     <section id="intro" className="py-16 sm:py-32 bg-gray-50 relative scroll-mt-24">
       <div className="container mx-auto px-6">
         <div className="text-center mb-20">
-          <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">01 샤오홍슈 소개</h2>
+          <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">02 왜 샤오홍슈인가</h2>
           <p className="text-2xl sm:text-4xl md:text-5xl font-black text-gray-900 leading-tight break-keep px-2">
             한국인의 검색이 <span className="text-green-500">네이버</span>라면, <br className="hidden md:block"/>
             중국인의 최초검색은 <span className="text-xhs-red">샤오홍슈</span>입니다.

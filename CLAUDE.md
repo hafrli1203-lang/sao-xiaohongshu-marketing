@@ -43,6 +43,7 @@
 ### Core Skills (필수)
 - **@vercel-labs/next-best-practices** — Next.js App Router 패턴, 서버/클라이언트 컴포넌트 분리, 라우팅 최적화
 - **@vercel-labs/react-best-practices** — React 컴포넌트 패턴, 상태 관리, 성능 최적화 (40+ 규칙)
+- **@Leonxlnx/taste-skill** — 프리미엄 프론트엔드 디자인 엔지니어링. AI 디자인 편향 교정, 메트릭 기반 UI 규칙, 하드웨어 가속 애니메이션, Bento 2.0 패러다임 (`~/.claude/skills/omc-learned/taste-skill/SKILL.md`)
 - **@coreyhaines31/form-cro** — 문의폼 전환율 최적화, 필드 배치, 에러 처리 UX
 - **@coreyhaines31/page-cro** — 랜딩페이지 전환율 최적화, CTA 배치, 섹션 구성
 - **@coreyhaines31/copywriting** — 마케팅 카피라이팅, B2B 설득 문구, CTA 텍스트
@@ -75,6 +76,7 @@
 | 랜딩페이지 섹션 수정 시 | @page-cro |
 | 마케팅 텍스트 수정 시 | @copywriting |
 | UI 컴포넌트 추가 시 | @shadcn-ui |
+| 프론트엔드 디자인/레이아웃/애니메이션 작업 시 | @taste-skill |
 | 배포 작업 시 | @vercel-deploy-claimable |
 | SEO 메타태그 수정 시 | @ai-seo |
 | 빌드 에러 발생 시 | /build-fix |

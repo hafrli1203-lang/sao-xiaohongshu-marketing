@@ -1,9 +1,9 @@
 import type { ProcessStep } from "@/types/sections";
 
 export const operationProcessData: ProcessStep[] = [
-  { number: "01", title: "클라이언트 홍보 방향", source: "브랜드에 맞는 마케팅 전략 수립" },
-  { number: "02", title: "인플루언서 매칭 및 협의", source: "최적의 인플루언서 선정" },
-  { number: "03", title: "매장 방문 체험 진행", source: "현장 체험 및 콘텐츠 소재 확보" },
-  { number: "04", title: "콘텐츠 업로드 & 키워드 삽입", source: "최적화된 SEO 설정 및 타겟팅" },
-  { number: "05", title: "결과 리포트", source: "성과 분석 및 향후 전략 제안" },
+  { number: "01", title: "무료 1차 진단 신청", source: "업종/지역 정보를 남겨주시면 간단한 적합도를 확인해 드립니다." },
+  { number: "02", title: "업종/지역 체크 후 방향 제안", source: "샤오홍슈에서의 가능성과 시작 방향을 정리해 안내합니다." },
+  { number: "03", title: "진단형 또는 파일럿형 선택", source: "상황에 맞는 시작 방식을 함께 결정합니다." },
+  { number: "04", title: "프로젝트 운영", source: "콘텐츠 발행, 품질 검수, 일정 관리를 진행합니다." },
+  { number: "05", title: "결과 정리 및 다음 단계 제안", source: "운영 결과를 정리하고 다음 방향을 제안합니다." },
 ];

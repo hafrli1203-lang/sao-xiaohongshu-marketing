@@ -6,10 +6,10 @@ export default function OperationProcess() {
     <section id="operation-process" className="py-16 md:py-32 bg-white scroll-mt-24">
       <div className="container mx-auto px-6 max-w-5xl">
         <div className="text-center mb-12 md:mb-20">
-          <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">06 운영 가이드</h2>
+          <h2 className="text-sm font-bold text-xhs-red tracking-widest uppercase mb-3">07 진행 절차</h2>
           <h3 className="text-2xl md:text-4xl lg:text-5xl font-black text-gray-900 leading-tight break-keep px-2">
-            체계적이고 투명한<br className="hidden md:block" />
-            <span className="text-xhs-red">진행 프로세스</span>
+            간단하고 명확한<br className="hidden md:block" />
+            <span className="text-xhs-red">진행 절차</span>
           </h3>
         </div>
 
