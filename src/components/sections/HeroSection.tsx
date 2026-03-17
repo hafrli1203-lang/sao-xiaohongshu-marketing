@@ -26,9 +26,7 @@ export default function HeroSection() {
 
           <div className="flex flex-col sm:flex-row flex-wrap gap-4 w-full sm:w-auto">
             <Link
-              href="https://open.kakao.com/o/s51feKli"
-              target="_blank"
-              rel="noopener noreferrer"
+              href="/inquiry"
               className="group bg-xhs-red hover:bg-xhs-red-dark text-white px-8 py-5 rounded-2xl font-bold text-xl flex justify-center items-center gap-3 transition-all duration-300 shadow-[0_8px_30px_rgb(255,36,66,0.3)] hover:shadow-[0_8px_30px_rgb(255,36,66,0.4)] hover:-translate-y-1 w-full sm:w-auto"
             >
               무료 상담 신청

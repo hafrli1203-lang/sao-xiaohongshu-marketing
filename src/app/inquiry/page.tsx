@@ -15,9 +15,9 @@ export default function InquiryPage() {
     <>
       <Header />
       <main className="px-4 sm:px-6 py-8 sm:py-12 max-w-2xl mx-auto">
-        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">고객문의</h1>
+        <h1 className="text-2xl sm:text-3xl font-bold text-gray-900 mb-2">무료 상담 신청</h1>
         <p className="text-sm sm:text-base text-gray-600 mb-8">
-          샤오홍슈 체험단 마케팅에 대해 궁금한 점을 남겨주세요.
+          업종과 지역 정보를 남겨주시면, 샤오홍슈 맞춤 방향을 안내해 드립니다.
         </p>
         <InquiryForm />
         <div className="mt-10 pt-10 border-t border-gray-200">

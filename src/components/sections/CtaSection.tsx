@@ -19,9 +19,7 @@ export default function CtaSection() {
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
           <Link
-            href="https://open.kakao.com/o/s51feKli"
-            target="_blank"
-            rel="noopener noreferrer"
+            href="/inquiry"
             className="group bg-white text-xhs-red px-10 py-5 rounded-2xl font-bold text-xl flex justify-center items-center gap-3 transition-transform hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
           >
             <MessageSquare className="w-6 h-6" />

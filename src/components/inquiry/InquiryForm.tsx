@@ -2,7 +2,7 @@
 
 import { useState } from "react";
 import type { InquiryFormData, InquiryFormState } from "@/types/inquiry";
-import { BUSINESS_CATEGORIES } from "@/types/inquiry";
+import { BUSINESS_CATEGORIES, REGIONS, BUSINESS_GOALS } from "@/types/inquiry";
 import { validateInquiryForm, hasErrors } from "@/lib/validation";
 
 const initialFormData: InquiryFormData = {
@@ -10,7 +10,9 @@ const initialFormData: InquiryFormData = {
   contactName: "",
   phone: "",
   email: "",
+  region: "서울",
   category: "맛집/레스토랑",
+  goal: "방문 유입",
   message: "",
 };
 
@@ -59,7 +61,7 @@ export default function InquiryForm() {
         setFormState({
           status: "success",
           errors: {},
-          message: "문의가 성공적으로 접수되었습니다. 빠른 시일 내에 연락드리겠습니다.",
+          message: "문의가 성공적으로 접수되었습니다. 업종/지역에 맞는 방향을 정리해 빠르게 안내드리겠습니다.",
         });
         setFormData(initialFormData);
       } else {
@@ -78,6 +80,9 @@ export default function InquiryForm() {
     }
   }
 
+  const selectClass = "w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent";
+  const inputClass = "w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent";
+
   return (
     <form onSubmit={handleSubmit} noValidate className="space-y-5">
       <div className="flex flex-col gap-1.5">
@@ -91,7 +96,7 @@ export default function InquiryForm() {
           value={formData.businessName}
           onChange={handleChange}
           required
-          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
+          className={inputClass}
         />
         {formState.errors.businessName && (
           <p role="alert" className="text-sm text-red-600 mt-0.5">
@@ -111,7 +116,7 @@ export default function InquiryForm() {
           value={formData.contactName}
           onChange={handleChange}
           required
-          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
+          className={inputClass}
         />
         {formState.errors.contactName && (
           <p role="alert" className="text-sm text-red-600 mt-0.5">
@@ -132,7 +137,7 @@ export default function InquiryForm() {
           value={formData.phone}
           onChange={handleChange}
           required
-          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
+          className={inputClass}
         />
         {formState.errors.phone && (
           <p role="alert" className="text-sm text-red-600 mt-0.5">
@@ -152,7 +157,7 @@ export default function InquiryForm() {
           value={formData.email}
           onChange={handleChange}
           required
-          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
+          className={inputClass}
         />
         {formState.errors.email && (
           <p role="alert" className="text-sm text-red-600 mt-0.5">
@@ -161,27 +166,73 @@ export default function InquiryForm() {
         )}
       </div>
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-5">
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="region" className="text-sm font-medium text-gray-700">
+            지역
+          </label>
+          <select
+            id="region"
+            name="region"
+            value={formData.region}
+            onChange={handleChange}
+            required
+            className={selectClass}
+          >
+            {REGIONS.map((r) => (
+              <option key={r} value={r}>{r}</option>
+            ))}
+          </select>
+          {formState.errors.region && (
+            <p role="alert" className="text-sm text-red-600 mt-0.5">
+              {formState.errors.region}
+            </p>
+          )}
+        </div>
+
+        <div className="flex flex-col gap-1.5">
+          <label htmlFor="category" className="text-sm font-medium text-gray-700">
+            업종
+          </label>
+          <select
+            id="category"
+            name="category"
+            value={formData.category}
+            onChange={handleChange}
+            required
+            className={selectClass}
+          >
+            {BUSINESS_CATEGORIES.map((cat) => (
+              <option key={cat} value={cat}>{cat}</option>
+            ))}
+          </select>
+          {formState.errors.category && (
+            <p role="alert" className="text-sm text-red-600 mt-0.5">
+              {formState.errors.category}
+            </p>
+          )}
+        </div>
+      </div>
+
       <div className="flex flex-col gap-1.5">
-        <label htmlFor="category" className="text-sm font-medium text-gray-700">
-          업종
+        <label htmlFor="goal" className="text-sm font-medium text-gray-700">
+          목표
         </label>
         <select
-          id="category"
-          name="category"
-          value={formData.category}
+          id="goal"
+          name="goal"
+          value={formData.goal}
           onChange={handleChange}
           required
-          className="w-full min-h-[44px] px-3 py-2 border border-gray-300 rounded-md text-base bg-white focus:outline-none focus:ring-2 focus:ring-yellow-400 focus:border-transparent"
+          className={selectClass}
         >
-          {BUSINESS_CATEGORIES.map((cat) => (
-            <option key={cat} value={cat}>
-              {cat}
-            </option>
+          {BUSINESS_GOALS.map((g) => (
+            <option key={g} value={g}>{g}</option>
           ))}
         </select>
-        {formState.errors.category && (
+        {formState.errors.goal && (
           <p role="alert" className="text-sm text-red-600 mt-0.5">
-            {formState.errors.category}
+            {formState.errors.goal}
           </p>
         )}
       </div>
@@ -193,7 +244,8 @@ export default function InquiryForm() {
         <textarea
           id="message"
           name="message"
-          rows={5}
+          rows={4}
+          placeholder="매장 소개나 궁금한 점을 자유롭게 작성해주세요."
           value={formData.message}
           onChange={handleChange}
           required
@@ -209,9 +261,9 @@ export default function InquiryForm() {
       <button
         type="submit"
         disabled={formState.status === "submitting"}
-        className="w-full min-h-[48px] px-6 py-3 bg-yellow-400 hover:bg-yellow-500 disabled:bg-yellow-200 disabled:cursor-not-allowed text-gray-900 font-semibold rounded-md text-base transition-colors"
+        className="w-full min-h-[48px] px-6 py-3 bg-xhs-red hover:bg-xhs-red-dark disabled:bg-red-300 disabled:cursor-not-allowed text-white font-bold rounded-md text-base transition-colors"
       >
-        {formState.status === "submitting" ? "접수 중..." : "문의하기"}
+        {formState.status === "submitting" ? "접수 중..." : "무료 상담 신청하기"}
       </button>
 
       {formState.status === "success" && (

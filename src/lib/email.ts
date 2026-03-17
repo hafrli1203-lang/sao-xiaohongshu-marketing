@@ -47,7 +47,9 @@ export async function sendInquiryEmail(data: InquiryFormData): Promise<void> {
 담당자명: ${data.contactName}
 연락처: ${data.phone}
 이메일: ${data.email}
+지역: ${data.region}
 업종: ${data.category}
+목표: ${data.goal}
 
 문의 내용:
 ${data.message}

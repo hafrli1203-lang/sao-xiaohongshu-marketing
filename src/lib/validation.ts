@@ -1,5 +1,5 @@
 import type { InquiryFormData } from "@/types/inquiry";
-import { BUSINESS_CATEGORIES } from "@/types/inquiry";
+import { BUSINESS_CATEGORIES, REGIONS, BUSINESS_GOALS } from "@/types/inquiry";
 
 export type ValidationErrors = Partial<Record<keyof InquiryFormData, string>>;
 
@@ -27,11 +27,19 @@ export function validateInquiryForm(
     errors.email = "올바른 이메일 주소를 입력해주세요.";
   }
 
+  if (!data.region || !REGIONS.includes(data.region)) {
+    errors.region = "지역을 선택해주세요.";
+  }
+
   if (
     !data.category ||
     !BUSINESS_CATEGORIES.includes(data.category)
   ) {
     errors.category = "업종을 선택해주세요.";
+  }
+
+  if (!data.goal || !BUSINESS_GOALS.includes(data.goal)) {
+    errors.goal = "목표를 선택해주세요.";
   }
 
   if (!data.message || data.message.length < 10 || data.message.length > 1000) {
