@@ -31,7 +31,7 @@ export default function HeroSection() {
               rel="noopener noreferrer"
               className="group bg-xhs-red hover:bg-xhs-red-dark text-white px-8 py-5 rounded-2xl font-bold text-xl flex justify-center items-center gap-3 transition-all duration-300 shadow-[0_8px_30px_rgb(255,36,66,0.3)] hover:shadow-[0_8px_30px_rgb(255,36,66,0.4)] hover:-translate-y-1 w-full sm:w-auto"
             >
-              무료 1차 진단 신청
+              무료 상담 신청
               <ArrowRight className="group-hover:translate-x-1 transition-transform" />
             </Link>
             <Link

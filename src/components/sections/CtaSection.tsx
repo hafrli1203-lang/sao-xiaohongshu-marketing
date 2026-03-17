@@ -10,11 +10,11 @@ export default function CtaSection() {
       
       <div className="container mx-auto px-4 sm:px-6 relative z-10 text-center">
         <h2 className="text-2xl sm:text-4xl md:text-6xl font-black text-white mb-6 tracking-tight drop-shadow-sm">
-          <span className="text-yellow-300">무료 1차 진단</span>으로 시작하세요
+          <span className="text-yellow-300">무료 상담</span>으로 시작하세요
         </h2>
         <p className="text-base sm:text-xl md:text-2xl text-white/90 font-medium mb-12 max-w-2xl mx-auto">
           업종과 지역 정보를 남겨주시면<br className="hidden md:block" />
-          샤오홍슈 적합도와 시작 방향을 정리해 드립니다.
+          맞춤 방향을 안내해 드립니다.
         </p>
 
         <div className="flex flex-col sm:flex-row justify-center gap-4">
@@ -25,7 +25,7 @@ export default function CtaSection() {
             className="group bg-white text-xhs-red px-10 py-5 rounded-2xl font-bold text-xl flex justify-center items-center gap-3 transition-transform hover:-translate-y-1 shadow-xl hover:shadow-2xl w-full sm:w-auto"
           >
             <MessageSquare className="w-6 h-6" />
-            무료 1차 진단 신청
+            무료 상담 신청
           </Link>
           <Link
             href="https://open.kakao.com/o/s51feKli"

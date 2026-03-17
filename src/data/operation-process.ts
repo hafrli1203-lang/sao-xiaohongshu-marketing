@@ -1,7 +1,7 @@
 import type { ProcessStep } from "@/types/sections";
 
 export const operationProcessData: ProcessStep[] = [
-  { number: "01", title: "무료 1차 진단 신청", source: "업종/지역 정보를 남겨주시면 간단한 적합도를 확인해 드립니다." },
+  { number: "01", title: "무료 상담 신청", source: "업종/지역 정보를 남겨주시면 맞춤 방향을 안내해 드립니다." },
   { number: "02", title: "업종/지역 체크 후 방향 제안", source: "샤오홍슈에서의 가능성과 시작 방향을 정리해 안내합니다." },
   { number: "03", title: "진단형 또는 파일럿형 선택", source: "상황에 맞는 시작 방식을 함께 결정합니다." },
   { number: "04", title: "프로젝트 운영", source: "콘텐츠 발행, 품질 검수, 일정 관리를 진행합니다." },
