@@ -40,6 +40,21 @@ yarn-error.log*
 # vercel
 .vercel
 
+# 내부 자료 (public repo에 노출 금지)
+*.pdf
+*.pptx
+*.docx
+*.xlsx
+*.psd
+페이퍼로지 폰트/
+
+# claude config
+.claude/
+
+# 루트의 제안서/상품안내 이미지 (public/images 제외)
+/샤오홍슈*.jpg
+/KakaoTalk*.jpg
+
 # typescript
 *.tsbuildinfo
 next-env.d.ts
