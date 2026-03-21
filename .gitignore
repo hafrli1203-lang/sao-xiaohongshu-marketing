@@ -46,7 +46,21 @@ yarn-error.log*
 *.docx
 *.xlsx
 *.psd
+*.hwp
 페이퍼로지 폰트/
+
+# 폰트 파일 (라이선스 문제 방지)
+public/fonts/*.ttf
+public/fonts/*.otf
+public/fonts/*.woff
+public/fonts/*.woff2
+
+# API 키 / 시크릿
+.env
+.env.*
+!.env.local.example
+*.key
+*.secret
 
 # claude config
 .claude/
